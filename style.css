@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Josefin+Sans&display=swap');
+
+*{
+    font-family: 'josefin sans';
+    padding: 0;
+    margin: 0;
+    color:#fff;
+}
+.postion{
+    position: absolute;
+    left:0%;
+    top: 8%;
+}
+.display-parsley,
+.display-onion,
+.display-olive,
+.display-meat1,
+.display-meat,
+.display-mashroom,
+.display-extra,
+.display-braclee,
+.display-shimla
+{
+    display: none;
+}
+.container{
+ display: flex;
+ flex-direction: row;
+ background: url('images/bg.jpg');
+ height:100vh;
+}
+
+.preview h1{
+    font-family: 'Finger Paint';
+    text-align: center;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%)
+}
+.options div{
+    padding: 20%;
+}
+
+label{
+    display: block;    
+}
+ h2{
+    margin-left: 250px
+}
+button{
+    color:black;
+    padding: 10px 20px;
+    position: absolute;
+    top:75%;
+    left:75%;
+    transform: translate(-50%,-50%);
+}

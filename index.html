@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza customizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="preview">
+            <h1>Pizza customizer</h1>
+            <img src="images/pizza.png" alt="">
+            <img src="images/parsley-topping.png" alt="" id="pars" class="postion display-parsley">
+            <img src="images/onion-topping.png" alt="" id="oni" class="postion display-onion">
+            <img src="images/olive-topping.png" alt="" id="oli" class="postion display-olive">
+            <img src="images/meat1-topping.png" alt="" id="meat" class="postion display-meat1">
+            <img src="images/meat-topping.png" alt="" id="tom" class="postion display-meat">
+            <img src="images/mashroom-topping.png" id="mash" alt="" class="postion display-mashroom">
+            <img src="images/extra-chees-topping.png" id="cheese" alt="" class="postion display-extra">
+            <img src="images/braclee-topping.png" alt="" id="brac" class="postion display-braclee">
+            <img src="images/shimla-tooping-lal.png" id="shi" alt="" class="postion display-shimla">
+        </div>
+        <div class="customizer">
+            <h2>Make Pizza</h2>
+            <div class="options">
+                <div>
+                    <label for="">parsley</label>
+                    <input type="checkbox" class="checked">
+
+                    <label for="">onion</label>
+                    <input type="checkbox" class="checked1" >
+
+                    <label for="">olive</label>
+                    
+                    <input type="checkbox" class="checked2">
+                    <label for="">meat</label>
+                    <input type="checkbox" class="checked3">
+
+                    <label for="">Tomato</label>
+                    <input type="checkbox" class="checked4">
+
+                </div>
+                <div>
+                  
+                    <label for="">mashroom</label>
+                    <input type="checkbox" class="checked5">
+
+                    <label for="">Extra Cheese</label>
+                    <input type="checkbox" class="checked6">
+
+                    <label for="">braclee</label>
+                    <input type="checkbox" class="checked7">
+
+                    <label for="">Capsicum</label>
+                    <input type="checkbox" class="checked8">
+
+                </div>
+                
+            </div>
+            <button onclick="pizzaMake()" >Make</button>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
