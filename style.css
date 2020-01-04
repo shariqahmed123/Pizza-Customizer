@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Finger+Paint|Josefin+Sans&display=swap');
 
+body{
+    background: url('images/bg.jpg');
+
+}
+
 *{
     font-family: 'josefin sans';
     padding: 0;
@@ -9,8 +14,10 @@
 }
 .postion{
     position: absolute;
-    left:0%;
-    top: 8%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    
 }
 .display-parsley,
 .display-onion,
@@ -23,41 +30,81 @@
 .display-shimla
 {
     display: none;
+    position: relative;
+    left: 0;
 }
 .container{
  display: flex;
- flex-direction: row;
- background: url('images/bg.jpg');
- height:100vh;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap-reverse;
+ /* flex-direction: row; */
+ /* height:100vh; */
 }
 
+.customizer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 5%;
+    margin: auto;
+}
 .preview h1{
+    margin-top:5%;
+    text-align: center;
+}
+.preview{
+    margin: auto;
+}
+.top-heading{
     font-family: 'Finger Paint';
     text-align: center;
 }
 .options{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%,-50%)
+    padding: 30%;
+    /* flex-direction: row; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 75%; */
+    /* transform: translate(-50%,-50%) */
 }
 .options div{
-    padding: 20%;
+    margin-right: 30px;
 }
 
 label{
     display: block;    
 }
- h2{
-    margin-left: 250px
-}
 button{
     color:black;
     padding: 10px 20px;
-    position: absolute;
-    top:75%;
-    left:75%;
-    transform: translate(-50%,-50%);
+}
+
+
+@media (max-width: 876px){
+    .postion{
+        top: 93%;
+        left: 50%;
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .customizer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .options div{
+        padding:0 20%;
+        font-size:30px;
+
+    }
+    .options{
+        margin-left: -20%;
+        margin-top: -20%;
+    }
+    .preview{
+        margin:auto;
+    }
 }
